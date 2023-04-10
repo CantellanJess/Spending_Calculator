@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<table style = "width:1%" border = "1.00">
+   <script type= "text/javascript">
+    function totalAmount(){
+      var Rent = document.getElementById("Rent Amount").value;
+      var Food = document.getElementById("Food Amount").value;
+      var Entertainment = document.getElementById("Entertainment Amount").value;
+      var Transportation = document.getElementById("Transportation Amount").value;
+
+      document.getElementById("Total Calc").innerHTML = parseInt(Rent) + parseInt(Food) + parseInt(Entertainment) + parseInt(Transportation);
+    }
+    </script>
+
+  <tr>
+    <th>A</th>
+    <th>B</th>
+  </tr>
+  <tr>
+      <td>Rent</td>
+      <td><input type = "number" id = "Rent Amount" value = "0" onchange="totalAmount()"></td>
+  </tr>
+  <tr>
+      <td>Food</td>
+      <td><input type = "number" id = "Food Amount" value = "0" onchange = "totalAmount()"></td>
+  </tr>
+  <tr>
+      <td>Entertainment</td>
+      <td><input type = "number" id = "Entertainment Amount" value = "0" onchange = "totalAmount()"></td>
+  </tr>
+  <tr>
+      <td>Transportation</td>
+      <td><input type = "number" id = "Transportation Amount" value = "0" onchange = "totalAmount()"></td>
+  </tr>
+  <tr>
+      <td>Total</td>
+      <td><span id = "Total Calc"></span></td>
+  </tr>
+</table>
+
+   
+  
+</body>
+</html>
+
+
+
+
+
+
